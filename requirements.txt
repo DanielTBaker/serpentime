@@ -1,0 +1,4 @@
+# requirements.txt
+mechanize
+numpy
+bs4
