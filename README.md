@@ -3,7 +3,9 @@ Python code for updating your ASIAA timesheet.
 # File Descriptions
 
 config.ini : Configuration file. Includes holiday names, clock times, and account info
+
 clock.py : Python script. The script that actually updates your time sheet
+
 serpentime.py : Python Script. Contains all the functions used by clock.py
 
 
