@@ -6,14 +6,21 @@ import configparser
 import argparse
 import re
 from serpentime import *
+from getpass import getpass
 
 ## Load Configuration
 config = configparser.ConfigParser()
 config.read('config.ini')
 ## Username
-user = config['Authorizaion']['user']
+if config['Authorization']['user']:
+    user = config['Authorization']['user']
+else:
+    user = input('Username : ')
 ## Password
-pwd  = config['Authorizaion']['password']
+if config['Authorization']['password']:
+    pwd  = config['Authorization']['password']
+else:
+    pwd = getpass()
 ## Clock in time (hours)
 clockIn = int(config['Clock Settings']['clockIn'])
 ## Clock out time (hours)
