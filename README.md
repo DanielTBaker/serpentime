@@ -21,8 +21,8 @@ In the config.ini file find the authorization section
 user = user.name
 password = password
 ```
-
 and insert your username and password.
+If you'd rather not have a plain text file with your username and password, the new version lets you leave one or more of them blank to enter at runtime.
 
 # Using the autoclocker
 
